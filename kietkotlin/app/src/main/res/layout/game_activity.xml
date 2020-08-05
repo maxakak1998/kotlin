@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688">
+
+    <ImageView
+        android:id="@+id/img_dice"
+        android:layout_width="0dp"
+        android:layout_height="182dp"
+        android:layout_marginBottom="32dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#009688"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/dice6" />
+
+    <include
+        android:id="@+id/oke1"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txt_scoreATitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Score A"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_scoreBTitle"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_scoreBTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Score B"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_currentTurnTitle" />
+
+    <TextView
+        android:id="@+id/txt_scoreB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        android:textColor="#FF0000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_scoreBTitle"
+        app:layout_constraintStart_toStartOf="@+id/txt_scoreBTitle"
+        app:layout_constraintTop_toBottomOf="@+id/txt_scoreBTitle" />
+
+    <TextView
+        android:id="@+id/txt_scoreA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        android:textColor="#FF1100"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_scoreATitle"
+        app:layout_constraintStart_toStartOf="@+id/txt_scoreATitle"
+        app:layout_constraintTop_toBottomOf="@+id/txt_scoreATitle" />
+
+    <TextView
+        android:id="@+id/txt_scoreStateA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textColor="#FF1100"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_scoreA"
+        app:layout_constraintStart_toStartOf="@+id/txt_scoreA"
+        app:layout_constraintTop_toBottomOf="@+id/txt_scoreA" />
+
+    <TextView
+        android:id="@+id/txt_scoreStateB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textColor="#FF1100"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_scoreB"
+        app:layout_constraintStart_toStartOf="@+id/txt_scoreB"
+        app:layout_constraintTop_toBottomOf="@+id/txt_scoreB" />
+
+    <TextView
+        android:id="@+id/txt_currentTurnTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Your turn"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oke1" />
+
+    <TextView
+        android:id="@+id/txt_currentTurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#00FFFFFF"
+        android:text="A"
+        android:textColor="#FF0000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_currentTurnTitle"
+        app:layout_constraintStart_toStartOf="@+id/txt_currentTurnTitle"
+        app:layout_constraintTop_toBottomOf="@+id/txt_currentTurnTitle" />
+
+    <TextView
+        android:id="@+id/txt_round"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Round 0"
+        style="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

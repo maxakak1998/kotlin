@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">kiet-kotlin</string>
+    <string name="play_game">Play game</string>
+    <string name="api_key">6826f5eb7fe34307e375c6086c9743c2</string>
+</resources>

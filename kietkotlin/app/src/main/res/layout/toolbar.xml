@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_toolBar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    app:title="Happy Birthday Card"
+    android:background="#375BC8">
+
+    <Button
+        android:id="@+id/btn_playGame"
+        style="@style/TextAppearance.AppCompat.Menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="10dp"
+        android:text="@string/play_game"
+        tools:ignore="RtlHardcoded" />
+    <Switch
+        android:id="@+id/switch_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:textColor="#FF5722"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:text="Easy"
+        android:visibility="gone"
+
+
+        />
+
+
+
+</androidx.appcompat.widget.Toolbar>
